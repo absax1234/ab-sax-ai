@@ -1,0 +1,30 @@
+{
+  "name": "ab-sax-ai",
+  "version": "1.0.0",
+  "description": "A.B SaX AI - Think Smarter. Create Anything. Professional AI platform with chat, search, image and video generation.",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspaces",
+    "build": "npm run build --workspaces",
+    "start": "npm start --workspaces",
+    "test": "npm test --workspaces",
+    "lint": "npm run lint --workspaces",
+    "setup": "npm install && npm run setup --workspaces",
+    "db:push": "cd backend && npx prisma db push",
+    "db:seed": "cd backend && npx prisma db seed",
+    "db:migrate": "cd backend && npx prisma migrate dev"
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "search",
+    "image-generation",
+    "video-generation"
+  ],
+  "author": "A.B SaX",
+  "license": "MIT"
+}
